@@ -10,6 +10,5 @@ RUN pip install --trusted-host pypi.python.org -r requirements.txt \
 
 EXPOSE 80
 
-CMD ["python","license_server.py"]
+ONBUILD CMD ["python","license_server.py"]
 
-ENV HOST_IP 172.20.16.215 
